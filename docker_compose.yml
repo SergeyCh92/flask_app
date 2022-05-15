@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  db:
+    build: storage_db
+    ports:
+      - 5431:5432

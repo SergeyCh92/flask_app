@@ -1,0 +1,28 @@
+@baseUrl = http://127.0.0.1:5000/
+
+###
+GET {{baseUrl}}/api/advertisements/?id=1
+
+###
+POST {{baseUrl}}/api/advertisements/
+Content-Type: application/json
+
+{
+    "description": "test_test",
+    "owner_id": "1"
+}
+
+###
+DELETE {{baseUrl}}/api/advertisements/
+
+###
+GET {{baseUrl}}/api/users/
+
+###
+POST {{baseUrl}}/api/users/
+Content-Type: application/json
+
+{
+    "name": "test_test",
+    "password": "test_password"
+}
